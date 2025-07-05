@@ -34,13 +34,13 @@ The `Mask__MLP.ipynb` notebook implements a basic image classification pipeline 
 
 ## 📊 Model Performance Summary
 
-![Model Performance Summary](Model_Performance.png)
+![Model Performance](Model_Performance.png)
 
 **Top Left:** Confusion matrix from DenseNet121  
 **Top Right:** Full classification report  
 
-![Model Performance Summary](Results.png)
-**Bottom Right:** ✅ Correct prediction on an unseen image of the author — demonstrating strong generalization
+![Model Performance](Demo_Output.png)
+**Bottom Right:** ✅ Correct prediction on an unseen images of the author 
 
 ---
 
