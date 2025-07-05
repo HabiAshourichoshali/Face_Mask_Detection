@@ -20,7 +20,7 @@ Key components:
 - Uses transfer learning to leverage pre-trained image features
 - Applies data augmentation and normalization
 - Trains and evaluates on a custom image dataset from Google Drive
-- Achieves high accuracy (~97%) with robust generalization, even on unseen test images
+- Achieves high accuracy (~97%) 
 
 This model significantly outperforms classical baselines and demonstrates the strength of deep learning for image classification.
 
@@ -33,24 +33,6 @@ The `Mask__MLP.ipynb` notebook implements a basic image classification pipeline 
 ---
 
 ## 📊 Model Performance Summary
-
-The model was trained using transfer learning with DenseNet121 and evaluated on a held-out test set.
-
-### 📈 Confusion Matrix & Metrics
-
-![Confusion Matrix and Metrics](Model_Performance.png)
-
-- **Accuracy:** 97%
-- **F1-score:** 0.97 for both "Mask" and "No Mask" classes
-- Balanced precision and recall across both categories
-
----
-
-## 🧪 Generalization: Visual Test on Unseen Image
-
-To test real-world performance, the model was evaluated on:
-- A sample from the training set
-- An unseen image of the author (*not in training data*)
 
 ![Generalization Results](Results.png)
 
@@ -84,5 +66,5 @@ To test real-world performance, the model was evaluated on:
 ```bash
 git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
 cd Face_Mask_Detection
-pip install -r requirements.txt  # Add if using pip environment
+pip install -r requirements.txt  
 jupyter notebook
