@@ -18,7 +18,7 @@ The `Mask_Pytorch_Transfer_learning.ipynb` notebook implements a deep learning p
 
 Key components:
 - Uses transfer learning to leverage pre-trained image features
-- Applies data augmentation and normalization
+- Preprocesses images by resizing and converting to tensors
 - Trains and evaluates on a custom image dataset from Google Drive
 - Achieves high accuracy (~97%) 
 
