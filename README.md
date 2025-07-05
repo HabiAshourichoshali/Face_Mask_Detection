@@ -44,10 +44,10 @@ The following figure displays the confusion matrix (left) and the full classific
 
 ### 🔍 Real-World Prediction Example
 
-To assess how well the model generalizes, predictions were made on images not included in the training or validation datasets. The example below shows the correct predictions on two personal photos of the author:
+To assess how well the model generalizes, predictions were made on images not included in the training or validation datasets. The example below shows the correct predictions on two photos of the author:
 
 <p align="center">
-  <img src="Demo_Output.png" alt="Generalization Demo Output" width="500"/>
+  <img src="Demo_Output.png" alt="Generalization Demo Output" width="700"/>
 </p>
 
 ---
