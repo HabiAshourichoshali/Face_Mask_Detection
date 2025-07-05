@@ -47,7 +47,7 @@ The following figure displays the confusion matrix (left) and the full classific
 To assess how well the model generalizes, predictions were made on images not included in the training or validation datasets. The example below shows the correct predictions on two photos of the author:
 
 <p align="center">
-  <img src="Demo_Output.png" alt="Generalization Demo Output" width="700"/>
+  <img src="Demo_Output.png" alt="Generalization Demo Output" width="1000"/>
 </p>
 
 ---
