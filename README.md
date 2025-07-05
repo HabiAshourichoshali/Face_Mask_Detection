@@ -1,28 +1,34 @@
 # Face Mask Detection
 
-This project focuses on detecting whether individuals are wearing face masks using machine learning and deep learning models. Motivated by the COVID-19 pandemic, this tool aims to support public health monitoring through automated image analysis.
+This project focuses on detecting whether individuals are wearing face masks using both classical machine learning (MLP) and deep learning (CNN with transfer learning). It demonstrates the development and comparison of different modeling strategies for a real-world classification task.
 
 ---
 
 ## 🎯 Objective
 
-To develop a computationally efficient model that detects unmasked individuals using:
-- Classical ML: Logistic Regression and Multi-Layer Perceptron (MLP)
-- Deep Learning: Transfer learning with DenseNet121
+To develop models that can classify face images as:
+- Wearing a mask (`face_mask`)
+- Not wearing a mask (`face_no_mask`)
 
 ---
 
-## 🧠 Methods
+## 🧠 CNN Model with Transfer Learning (PyTorch)
 
-### 🗃️ Data Preparation
-- Annotated face-mask datasets from Kaggle
-- Cropped and resized face regions
-- Flattened feature vectors for classical ML models
+The `Mask_Pytorch_Transfer_learning.ipynb` notebook implements a deep learning pipeline for face mask detection using **PyTorch** and **transfer learning**. A pre-trained CNN model (e.g., DenseNet121) is fine-tuned on a labeled dataset of masked and unmasked face images.
 
-### 🧪 Models Implemented
-1. **Logistic Regression** – Baseline binary classifier
-2. **MLP (Multi-Layer Perceptron)** – Improved architecture
-3. **Transfer Learning (DenseNet121)** – High-accuracy deep model
+Key components:
+- Uses transfer learning to leverage pre-trained image features
+- Applies data augmentation and normalization
+- Trains and evaluates on a custom image dataset from Google Drive
+- Achieves high accuracy (~97%) with robust generalization, even on unseen test images
+
+This model significantly outperforms classical baselines and demonstrates the strength of deep learning for image classification.
+
+---
+
+## 📦 Classical MLP Model (Baseline)
+
+The `Mask__MLP.ipynb` notebook implements a basic image classification pipeline using a **Multi-Layer Perceptron (MLP)** model. Face images are resized, flattened into feature vectors, and used to train a classifier that predicts whether the person is wearing a mask. While less powerful than CNN-based approaches, this notebook demonstrates a classical machine learning baseline for comparison.
 
 ---
 
@@ -57,8 +63,8 @@ To test real-world performance, the model was evaluated on:
 
 ## 📁 Files
 
-- `Mask_Pytorch_Transfer_learning.ipynb`: Transfer learning using DenseNet121
-- `Mask__MLP.ipynb`: Classical ML models (LogReg, MLP)
+- `Mask_Pytorch_Transfer_learning.ipynb`: Transfer learning using PyTorch
+- `Mask__MLP.ipynb`: Classical ML (MLP baseline)
 - `Model_Performance.png`: Confusion matrix + metrics
 - `Results.png`: Visual predictions and evaluation
 - `Face_mask_recognition.pdf`: Full project report
@@ -78,5 +84,5 @@ To test real-world performance, the model was evaluated on:
 ```bash
 git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
 cd Face_Mask_Detection
-pip install -r requirements.txt  # If added
-jupyter notebook Mask_Pytorch_Transfer_learning.ipynb
+pip install -r requirements.txt  # Add if using pip environment
+jupyter notebook
