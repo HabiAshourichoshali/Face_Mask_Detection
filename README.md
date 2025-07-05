@@ -57,7 +57,7 @@ To assess how well the model generalizes, predictions were made on images not in
 - `Mask_Pytorch_Transfer_learning.ipynb`: Transfer learning using PyTorch
 - `Mask__MLP.ipynb`: Classical ML (MLP baseline)
 - `Model_Performance.png`: Confusion matrix + metrics
-- `Results.png`: Visual predictions and evaluation
+- `Demo_Output.png`: Model prediction results on non-training author photos
 - `Face_mask_recognition.pdf`: Full project report
 
 ---
