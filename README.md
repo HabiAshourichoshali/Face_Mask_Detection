@@ -58,7 +58,6 @@ To assess how well the model generalizes, predictions were made on images not in
 - `Mask__MLP.ipynb`: Classical ML (MLP baseline)
 - `Model_Performance.png`: Confusion matrix + metrics
 - `Demo_Output.png`: Model prediction results on non-training author photos
-- `Face_mask_recognition.pdf`: Full project report
 
 ---
 
