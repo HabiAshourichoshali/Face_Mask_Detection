@@ -77,3 +77,17 @@ git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
 cd Face_Mask_Detection
 pip install -r requirements.txt  
 jupyter notebook
+---
+
+## 📂 Datasets
+
+This project uses publicly available datasets from Kaggle for training and evaluation:
+
+- [Mask Detection Dataset by Alexandra Lorenzo](https://www.kaggle.com/alexandralorenzo/maskdetection)  
+- [Face Mask Detection Dataset by Wobot Intelligence](https://www.kaggle.com/wobotintelligence/face-mask-detection-dataset)  
+- [Face Mask Detection by Andrew Mvd](https://www.kaggle.com/andrewmvd/face-mask-detection)  
+- [YOLOv3 Starter Kit by Alexandra Lorenzo](https://www.kaggle.com/alexandralorenzo/yolov3-startkit)  
+
+These datasets include labeled images of individuals with and without masks, and were used to train and test both deep learning and classical models.
+
+---
