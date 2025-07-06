@@ -89,5 +89,4 @@ git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
 cd Face_Mask_Detection
 pip install -r requirements.txt  
 jupyter notebook
----
 
