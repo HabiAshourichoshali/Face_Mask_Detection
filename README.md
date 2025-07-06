@@ -70,15 +70,6 @@ To assess how well the model generalizes, predictions were made on images not in
 
 ---
 
-## 🚀 How to Run
-
-```bash
-git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
-cd Face_Mask_Detection
-pip install -r requirements.txt  
-jupyter notebook
----
-
 ## 📂 Datasets
 
 This project uses publicly available datasets from Kaggle for training and evaluation:
@@ -91,3 +82,12 @@ This project uses publicly available datasets from Kaggle for training and evalu
 These datasets include labeled images of individuals with and without masks, and were used to train and test both deep learning and classical models.
 
 ---
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/HabiAshourichoshali/Face_Mask_Detection.git
+cd Face_Mask_Detection
+pip install -r requirements.txt  
+jupyter notebook
+---
+
